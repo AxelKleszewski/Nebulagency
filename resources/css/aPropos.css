@@ -1,0 +1,70 @@
+
+.aPropos-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/free-photo/fantasy-style-galaxy-background_23-2151114343.jpg?t=st=1734597337~exp=1734600937~hmac=4049ab239da794477279f7693ffb20630ecbda35ec70ddd0aea1d412d8091458&w=996');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.aPropos-texte {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    margin: 40px;
+    max-width: 700px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.aPropos-texte h1 {
+    font-size: 2.5rem;
+    color: #F2D1E2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Equinox-Bold', sans-serif;
+}
+
+.aPropos-texte h2 {
+    font-size: 3rem;
+    color: #C79AE4;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #644882;
+    padding-bottom: 5px;
+    font-family: 'Equinox-Bold', sans-serif;
+}
+
+.aPropos-texte h3 {
+    font-size: 2rem;
+    color: #F2D1E2;
+    margin-bottom: 5px;
+    font-family: Equinox-Bold, sans-serif;
+}
+
+.aPropos-texte p {
+    font-size: 1.5rem;
+    color: #DDD;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: 'constan';
+}
+
+.aPropos-mentions {
+    margin-top: 20px;
+}
+
+.aPropos-mentions a {
+    color: #C79AE4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.aPropos-mentions a:hover {
+    text-decoration: underline;
+}

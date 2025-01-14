@@ -1,0 +1,52 @@
+.quisommenous {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/free-photo/photorealistic-earth-planet_23-2151075899.jpg?t=st=1734597813~exp=1734601413~hmac=679ce094dea58b718ef3feab2ea28e2ad4bd7d2ba9caf9772efb9d9b9762f189&w=996');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.quisommenous-texte {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    margin: 40px;
+}
+
+.quisommenous-texte h1 {
+    font-size: 2.5rem;
+    color: #F2D1E2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Equinox-Bold', sans-serif;
+}
+
+.quisommenous-texte p {
+    font-size: 1rem;
+    color: #DDD;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.quisommenous-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.quisommenous-video-container iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+}

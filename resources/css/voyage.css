@@ -1,0 +1,902 @@
+/*CSS Index.blade.php*/
+
+/* Conteneur principal */
+.voyages-container {
+    background-image: url('https://img.freepik.com/free-photo/galactic-sky-glowing-with-abstract-designs-generated-by-ai_188544-18506.jpg?t=st=1734590071~exp=1734593671~hmac=641c4129c4c31f9204e786617de1a1eff2f5c13f74344194908c67163a8966be&w=1060');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #2B2735;
+    color: #EDEDED;
+}
+
+/* Barre de navigation */
+.voyages-navbar {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.voyages-button-add {
+    padding: 10px 20px;
+    background-color: #6A4B86;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.voyages-button-add:hover {
+    background-color: #8A5DA3;
+    text-decoration: none;
+    color: white;
+}
+
+/* En-tête */
+.voyages-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.voyages-title {
+    font-size: 4rem;
+    font-family: 'Equinox-Bold', sans-serif;
+    color: #F2D1E2;
+}
+
+/* Filtre */
+.voyages-filter {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.voyages-filter-label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #C9A9D5;
+}
+
+.voyages-filter-select {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #6A4B86;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #40354B;
+    color: #EDEDED;
+}
+
+.voyages-filter-button {
+    padding: 5px 15px;
+    background-color: #6A4B86;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voyages-filter-button:hover {
+    background-color: #8A5DA3;
+}
+
+/* Liste des voyages */
+.voyages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.voyages-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    gap: 15px;
+}
+
+.voyages-item {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.voyages-item-title {
+    font-family: 'Equinox-Bold', sans-serif;
+    font-size: 1.5rem;
+    color: #F2D1E2;
+    margin: 10px 0;
+}
+
+.voyages-item-subtitle {
+    font-family: 'Equinox-Bold', sans-serif;
+    font-size: 2rem;
+    color: #F2D1E2;
+    text-align: center;
+}
+
+.voyages-item-summary,
+.voyages-item-duration {
+    font-family: 'constan';
+    font-size: 1rem;
+    margin: 0 0 10px;
+}
+
+.voyages-item-image img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.voyages-item-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.voyages-item-button,
+.voyages-item-button-supp {
+    padding: 10px 20px;
+    color: white;
+    background-color: #6A4B86;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    border: none;
+}
+
+.voyages-item-button:hover,
+.voyages-item-button-supp:hover {
+    background-color: #8A5DA3;
+    text-decoration: none;
+    color: white;
+}
+
+.voyages-item-button-supp {
+    padding: 15px 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.voyages-no-items {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #BFB3C9;
+    padding: 2px;
+}
+
+/*CSS show.blade.php*/
+
+.show {
+    background-image: url("https://img.freepik.com/free-photo/fantasy-style-galaxy-background_23-2151114323.jpg?t=st=1734566921~exp=1734570521~hmac=ccc3c580d5ed4883b1c9f930cbcb321ba7379a9a39012099a7b3f2c1f341b21b&w=996");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.show-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-liste {
+    background: rgba(0, 0, 0, 0.8);
+    color: #EDEDED;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 100%;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.show h1 {
+    font-family: 'Equinox-Bold', sans-serif;
+    font-size: 2.5rem;
+    color: #F2D1E2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.show p {
+    font-family: 'constan';
+    font-size: 1.1rem;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.show p:first-of-type {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #F2D1E2;
+}
+
+.show a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6A4B86;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.show a:hover {
+    background-color: #8A5DA3;
+    transform: translateY(-3px);
+}
+
+.show a + a {
+    margin-left: 20px;
+    background-color: #524763;
+}
+
+.show a + a:hover {
+    background-color: #6A4B86;
+}
+
+.comments-section {
+    margin-top: 50px;
+    text-align: center;
+    color: #EDEDED;
+    padding: 20px;
+}
+
+.comments-title {
+    font-size: 3rem;
+    font-family: 'Equinox-Bold', sans-serif;
+    color: #F2D1E2;
+}
+
+.comments-list {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px;
+}
+
+.comment-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-right: 10px;
+}
+
+.comment-bubble {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 15px;
+    width: 300px;
+    color: #EDEDED;
+    position: relative;
+    text-align: left;
+    min-height: 100px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.comment-bubble::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -18.9px;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.7) transparent transparent;
+}
+
+.comment-author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F2D1E2;
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 400px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+/*CSS INDEX ETAPES VOYAGES*/
+
+.etapes-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    color: #EDEDED;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    max-width: 900px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 40px;
+}
+
+.etapes-fond{
+    background-image: url('https://img.freepik.com/free-photo/digital-art-galaxy_23-2151050715.jpg?t=st=1734590411~exp=1734594011~hmac=e496d86d39310744c465144f4d60de8353fbe859d0ba406fb4af58b9d87544c2&w=740');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.etapes-action-btn{
+    display: flex;
+}
+
+.etapes-title {
+    font-family: 'Equinox-Bold', sans-serif;
+    font-size: 2.5rem;
+    color: #F2D1E2;
+    margin-bottom: 20px;
+}
+
+.etapes-message {
+    font-size: 1.2rem;
+    color: #BFB3C9;
+    font-style: italic;
+}
+
+.etapes-image {
+    margin-bottom: 30px;
+}
+
+.etapes-image-img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.etapes-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.etapes-table th,
+.etapes-table td {
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 1px solid #524763;
+}
+
+.etapes-table th {
+    background-color: #6A4B86;
+    color: #FFFFFF;
+    font-family: 'Equinox-Bold', sans-serif;
+}
+
+.etapes-table td {
+    font-family: 'constan';
+}
+
+.etapes-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.etapes-btn-view {
+    background-color: #6A4B86;
+    font-family: 'constan', sans-serif;
+}
+
+.etapes-btn-view:hover {
+    background-color: #8A5DA3;
+    text-decoration: none;
+    color: #F2D1E2;
+}
+
+.etapes-btn-back {
+    background-color: #8A5DA3;
+    font-family: 'constan';
+}
+
+.etapes-btn-back:hover {
+    background-color: #8A5DA3;
+    text-decoration: none;
+    color: #F2D1E2;
+}
+
+/*CSS ETAPES SHOW.BLADES.CSS*/
+
+.etape-show{
+    background-image: url('https://img.freepik.com/free-photo/space-scene-with-planet-sun_1268-33645.jpg?t=st=1734590898~exp=1734594498~hmac=d83e518836efba3652ea0e7da2d94e0a7b5101130fb924ff4dbf755e3c9d9e41&w=1060');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: 'constan', sans-serif;
+}
+
+.titre-etape {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #F2D1E2;
+    font-family: 'Equinox-Bold', sans-serif;
+}
+
+
+.etape-content {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+.etape-image {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.etape-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.etape-text {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation .btn {
+    color: #F2D1E2;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.etape-show-bou{
+    display: flex;
+    justify-content: center;
+}
+
+.etape-show-bou .bouton{
+    background-color: #8A5DA3;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'constan';
+
+}
+
+
+.com-section {
+    margin-top: 40px;
+}
+
+.com-title {
+    font-size: 4rem;
+    color: #F2D1E2;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Equinox-Bold';
+}
+
+.com-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.com {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgb(138, 93, 163, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.comment-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-author {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #F2D1E2;
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.no-media,
+.no-comments {
+    text-align: center;
+    font-style: italic;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+/*CSS Create.blade.php*/
+
+
+.create{
+    padding: 40px;
+    background-image: url('https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.jpg?t=st=1734577499~exp=1734581099~hmac=ead0cbfadcabb9c77a0e465b03c9bf706abbd983b3ef47753c966f67bf07e657&w=1060');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.create-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(58, 49, 69, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+.create-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #F2D1E2;
+    margin-bottom: 20px;
+    font-family: 'Equinox-Bold';
+}
+
+.create-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #F2D1E2;
+    font-family: 'constan';
+}
+
+.create-input, .create-textarea, .create-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: 'constan';
+}
+
+.create-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.create-input-file {
+    background-color: #FFFFFF;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.create-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-family: 'constan';
+}
+
+.create-btn-primary {
+    background-color: #6A4B86;
+    color: #FFFFFF;
+    border: none;
+}
+
+.create-btn-primary:hover {
+    color: #F2D1E2;
+}
+
+.create-btn-secondary {
+    background-color: #6A4B86;
+    color: #FFFFFF;
+    border: none;
+}
+
+.create-btn-secondary:hover {
+    color: #F2D1E2;
+    text-decoration: none;
+}
+
+/*CSS Edit.blade.php*/
+
+.edit {
+    padding: 40px;
+    background-image: url('https://img.freepik.com/free-photo/glowing-spaceship-orbits-sphere-deep-space-generated-by-ai_188544-9658.jpg?t=st=1734580472~exp=1734584072~hmac=9449d8fe78636a8b910aa0de57fdd3902a7f2ca190008c9e64e204dc26456541&w=1060');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.edit-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(58, 49, 69, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+.edit-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #F2D1E2;
+    margin-bottom: 20px;
+    font-family: 'Equinox-Bold';
+}
+
+.edit-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #F2D1E2;
+    font-family: 'constan';
+}
+
+.edit-input, .edit-textarea, .edit-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: 'constan';
+}
+
+.edit-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.edit-input-file {
+    background-color: #FFFFFF;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.edit-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-family: 'constan';
+}
+
+.edit-btn-primary {
+    background-color: #6A4B86;
+    color: #FFFFFF;
+    border: none;
+}
+
+.edit-btn-primary:hover {
+    color: #F2D1E2;
+}
+
+.edit-btn-secondary {
+    background-color: #6A4B86;
+    color: #FFFFFF;
+    border: none;
+}
+
+.edit-btn-secondary:hover {
+    color: #F2D1E2;
+    text-decoration: none;
+}
+
+/*Ajout commentaire*/
+
+/* Conteneur global de la section des commentaires */
+.comment-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre principal */
+.comment-title {
+    font-size: 1.8em;
+    color: #6A4B86;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Formulaire de commentaire */
+.comment-form-wrapper {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Champs de formulaire */
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    resize: vertical;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+
+    outline: none;
+}
+
+/* Bouton de soumission */
+.submit-button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    background-color: #6A4B86;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #5A3B76;
+}
+
+/* Placeholder du texte dans le textarea */
+.form-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+

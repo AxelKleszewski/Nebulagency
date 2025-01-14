@@ -1,0 +1,45 @@
+.like-form{
+    margin-top: 30px;
+}
+
+.like-button {
+    align-items: center;
+    gap: 8px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    margin: 0 22px;
+}
+
+.like-button:hover {
+    background-color: #f9f9f9;
+}
+
+.like-button:active {
+    transform: scale(0.95);
+}
+
+.like-button.liked {
+    border-color: #ff4d4d;
+    background-color: #ffe6e6;
+    color: #ff4d4d;
+}
+
+.like-icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.like-button.liked .like-icon {
+    transform: scale(1.2);
+}
+
+.like-text {
+    font-weight: bold;
+}

@@ -1,0 +1,381 @@
+/* Style de la section du profil */
+
+.profile-fond{
+    border-top: 1px solid #7C5AA2;
+    background-image: url('https://img.freepik.com/free-photo/astronaut-diving-digital-art_23-2151198199.jpg?t=st=1734593105~exp=1734596705~hmac=32dd23f3f2ec820c2606885c4cd8f95af6e2894db4f7fa86dfa53572a0f53cc3&w=900');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    display: flex;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'constan', sans-serif;
+    margin-top: 8rem;
+}
+
+.profile-img-container {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex-grow: 1;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.profile-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #F2D1E2;
+    font-family: 'Equinox', sans-serif;
+}
+
+.profile-pseudo,
+.profile-email,
+.profile-created-at {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #D1B3D3;
+    font-family: 'constan',sans-serif;
+}
+
+.profile-edit-btn {
+    display: inline-block;
+    background-color: #6A4B86;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-family: 'constan',sans-serif;
+}
+
+
+.profile-edit-btn:hover {
+    background-color: #9F7FBF;
+    text-decoration: none;
+    color: white;
+}
+
+.profile-section2 {
+
+}
+
+
+/*CSS edit.blade.php*/
+
+.user-profile-section {
+    background-image: url('https://img.freepik.com/free-photo/view-futuristic-space-rocket_23-2151151852.jpg?t=st=1734585114~exp=1734588714~hmac=0c9ef92039810900e3424199738abf799797220d8e3877f03babf8880f8dc600&w=996');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.user-profile-card {
+    background-color: rgba(58, 49, 69, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    font-family: 'constan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-title {
+    font-size: 2rem;
+    color: #F2D1E2;
+    margin-bottom: 20px;
+    font-family: 'Equinox-Bold', sans-serif;
+}
+
+.user-form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #F2D1E2;
+    text-align: left;
+    width: 100%;
+}
+
+.user-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.user-small {
+    font-size: 0.9rem;
+    color: #D1B3D3;
+    margin-top: 5px;
+}
+
+.user-btn {
+    display: block;
+    background-color: #6A4B86;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+    font-family: 'constan', sans-serif;
+}
+
+.user-btn:hover {
+    background-color: #9F7FBF;
+}
+
+.profile-see-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-all-user{
+    display: inline-block;
+    background-color: #6A4B86;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-family: 'constan',sans-serif;
+    margin-bottom: 40px;
+}
+
+.profile-all-user:hover {
+    background-color: #9F7FBF;
+    text-decoration: none;
+    color: white;
+}
+
+/*CSS Liste des utilisateurs*/
+
+.utilisateur-fond{
+    padding-bottom: 50px; 
+    padding-top: 50px;
+    background-image: url('https://img.freepik.com/free-photo/digital-art-galaxy_23-2151050621.jpg?t=st=1734603750~exp=1734607350~hmac=176f9e53f6485996716e06e41fc0e52a317f526ed643488342a8b4f4c9a80bfa&w=740');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}   
+
+.utilisateur-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'constan', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 900px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0 auto; 
+}
+
+
+.utilisateur-title {
+    font-size: 2.5rem;
+    color: #F2D1E2;
+    text-align: center;
+    font-family: 'Equinox-Bold', sans-serif;
+}
+
+.utilisateur-success-message {
+    background-color: #8A5DA3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.utilisateur-table {
+    width: 100%;
+    max-width: 900px; 
+    margin: 30px 0; 
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.utilisateur-table thead tr {
+    background-color: #644882;
+    color: #FFFFFF;
+}
+
+.utilisateur-table th {
+    text-align: left;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+
+.utilisateur-table tbody tr {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.utilisateur-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.utilisateur-table td {
+    padding: 15px;
+    color: #FFFFFF;
+}
+
+
+.utilisateur-profile-link {
+    color: #C79AE4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.utilisateur-profile-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+.utilisateur-action-btn {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #8A5DA3;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.utilisateur-action-btn:hover {
+    color: #f192ff;
+    text-decoration: none;
+}
+
+.utilisateur-profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.utilisateur-profile-img-container {
+    margin-bottom: 15px;
+}
+
+.utilisateur-profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.utilisateur-profile-info {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.utilisateur-profile-info p {
+    margin-bottom: 10px;
+}
+
+.utilisateur-profile-edit-btn {
+    background-color: #8A5DA3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.utilisateur-profile-edit-btn:hover {
+    background-color: #ddc1f4;
+    color: #000;
+}
+
+.utilisateur-back-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.utilisateur-back-link a {
+    background-color: #8A5DA3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.utilisateur-back-link a:hover {
+    background-color: #ddc1f4;
+    color: #000;
+}
+
+

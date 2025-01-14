@@ -1,0 +1,109 @@
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/free-photo/rocket-flying-through-space_23-2150378595.jpg?t=st=1734595748~exp=1734599348~hmac=d2b485c6ff39092ca5dafa40e9af32406c4d1d21bc730466713477e8e4a4c36d&w=996');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact-texte {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    font-family: 'constan', sans-serif;
+}
+
+.contact-texte h1 {
+    font-size: 2.5rem;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+    font-family: 'Equinox-Bold', sans-serif;
+    text-align: center;
+}
+
+.contact-texte p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #f2f2f2;
+    margin-bottom: 5px;
+}
+
+.contact-input, 
+.contact-textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+
+}
+
+.contact-textarea {
+    resize: none;
+}
+
+.contact-button {
+    background-color: #644882;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    margin-top: 20px; 
+    width: fit-content;
+}
+
+.contact-button:hover {
+    background-color: #ddc1f4;
+    transform: scale(1.05);
+}
+
+.contact-dessous {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+}
+
+.contact-dessous a {
+    color: #c79ae4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-dessous a:hover {
+    text-decoration: underline;
+}
